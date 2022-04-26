@@ -18,7 +18,7 @@ To use, simply click in the search field and type your city or country or city a
 
 
 ## Install
-to install run `npm install` *yarn or yarn install currently not working*
+to install run `yarn` if that fails try `npm install`
 
 ## Available Scripts
 
