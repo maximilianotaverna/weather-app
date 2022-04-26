@@ -9,7 +9,7 @@ Unfortunatley was not able to write any test scripts. The openweather API expose
 
 Due to future changes with openweather discontinuing the search by city name in their API there will be a requirement to change the apps search behaviour in the future to use geocoding see this [documentation](https://openweathermap.org/api/geocoding-api)
 
-The current background image only changes on refresh, ideally I would have liked to have the background image change when either the temrature changes or a new city is searched.
+The current background image only changes on refresh, ideally I would have liked to have the background image change when either the temperature changes or a new city is searched.
 
 To use, simply click in the search field and type your city or country or city and country name. Using the country abbreviation code eg. AU works best in this last scenario.
 
