@@ -17,6 +17,9 @@ To use, simply click in the search field and type your city or country or city a
 ![mobile viewport](/public/assets/images/weather-mobile.png "Mobile")
 
 
+## Install
+to install run `npm install` *yarn or yarn install currently not working*
+
 ## Available Scripts
 
 In the project directory, you can run:
