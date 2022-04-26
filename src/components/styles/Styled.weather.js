@@ -10,11 +10,19 @@ const StyledWeather = styled.div`
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  & .today {
+    @media (min-width: 1024px) {
+      height: 60vh;
+    }
+  }
   & .week {
     justify-self: end;
     text-align: center;
+    @media (min-width: 1024px) {
+      display: flex;
+    }
   }
-  & [class^='forecast'] {
+  & [class^="forecast"] {
     font-size: 0.8rem;
   }
   & .city {
@@ -40,18 +48,27 @@ const StyledWeather = styled.div`
     margin-bottom: -2rem;
   }
   & .forecast-group {
-    border-bottom: 1px solid #FFFFFF0F;
+    border-bottom: 1px solid #ffffff0f;
+    @media (min-width: 1024px) {
+      border-bottom: none;
+      margin-right: 1rem;
+    }
   }
   & .forecast-day {
     margin-bottom: 1rem;
+    @media (min-width: 1024px) {
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #FFFFFF0F;
+    }
+
   }
   & .forecast-icon {
     margin-bottom: -1.2rem;
     animation: weather-icon-move 4s ease-in-out infinite;
     @keyframes weather-icon-move {
-      50% { 
-            transform: translateY(-4px); 
-        }
+      50% {
+        transform: translateY(-4px);
+      }
     }
   }
 `;
