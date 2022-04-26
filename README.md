@@ -13,8 +13,8 @@ The current background image only changes on refresh, ideally I would have liked
 
 To use, simply click in the search field and type your city or country or city and country name. Using the country abbreviation code eg. AU works best in this last scenario.
 
-![desktop viewport](/public/assets/images/weather-desktop.png "Desktop")
-![mobile viewport](/public/assets/images/weather-mobile.png "Mobile")
+![desktop viewport](/public/assets/images/screenshot_desktop.png "Desktop")
+![mobile viewport](/public/assets/images/screenshot_mobile.png "Mobile")
 
 
 ## Install
