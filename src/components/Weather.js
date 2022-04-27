@@ -42,7 +42,7 @@ const Weather = ({ city }) => {
       <div className="week">
         {dailyForecast?.map((item, index) =>  (
             <div className="forecast-group" key={item.dt}>
-              <img className="forecast-icon" alt={item?.weather[0]?.description} src={`${iconURL}${item?.weather[0]?.icon && item?.weather[0].icon}@2x.png`} />
+              <img className="forecast-icon" alt={`${item?.weather[0]?.description}`} src={`${iconURL}${item?.weather[0]?.icon && item?.weather[0].icon}@2x.png`} />
               <p className="forecast-temp">{item?.main?.temp && Math.round(item?.main.temp)}°c</p>
               <p className="forecast-day">{displayDay(item?.dt_txt)}</p>
             </div>
