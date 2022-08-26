@@ -10,10 +10,11 @@ const Card = ({ placeholder }) => {
   const handleChange = (eHandleChange) => setQuery(eHandleChange.target.value);
   const clear = (eClear) => (eClear.target.value = "");
   return (
-    <StyledBackground>
+    <StyledBackground temp={query}>
       <StyledCard>
         <StyledSearchInput
           type="text"
+          spellCheck="false"
           placeholder={placeholder}
           onChange={handleChange}
           onClick={clear}

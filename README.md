@@ -3,18 +3,20 @@
 This is a 5 day weather forecast app tyhat hero's todays date using the [OpenWeatherMap API](https://openweathermap.org/api).
 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). and uses [Styled Components](https://styled-components.com/) to make use of CSS in JS. And was designed to be responsize accross most breakpoints.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). and uses [Styled Components](https://styled-components.com/) to make use of CSS in JS. And was designed to be responsive accross most breakpoints.
 
-Unfortunatley was not able to write any test scripts. The openweather API exposes a private key publicly and ideally for security reasons it would be best to move this server side with some kind of token authentication.
+The openweather API exposes a private key publicly and ideally for security reasons it would be best to move this server side with some kind of token authentication.
 
-Due to future changes with openweather discontinuing the search by city name in their API there will be a requirement to change the apps search behaviour in the future to use geocoding see this [documentation](https://openweathermap.org/api/geocoding-api)
+Due to future changes with openweather discontinuing the search by city name in their API there will be a requirement to change the apps search behaviour to use geocoding see this [documentation](https://openweathermap.org/api/geocoding-api)
 
-The current background image only changes on refresh, ideally I would have liked to have the background image change when either the temperature changes or a new city is searched.
+The current background image only changes on refresh, ideally I would have liked to have the background image to change when either the temperature changes or a new city is searched.
 
-To use, simply click in the search field and type your city or country or city and country name. Using the country abbreviation code eg. AU works best in this last scenario.
+To use, simply click in the search field and type your city or country or city and country name.
 
-![desktop viewport](/public/assets/images/screenshot_desktop.png "Desktop")
-![mobile viewport](/public/assets/images/screenshot_mobile.png "Mobile")
+View on [GitHub Pages](https://maximilianotaverna.github.io/weather-app/)
+
+![mobile viewport](/public/assets/images/iPad%20Pro%20portrait.png "Mobile")
+![desktop viewport](/public/assets/images/iPad%20Pro%20landscape.png "Desktop")
 
 
 ## Install

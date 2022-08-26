@@ -4,26 +4,38 @@ const StyledWeather = styled.div`
   font-family: Poppins;
   line-height: 1.28;
   display: block;
-  padding-top: 3rem;
+  padding-top: 2rem;
   user-select: none;
   & .layout {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   & .today {
-    @media (min-width: 1024px) {
-      height: 60vh;
+    @media (max-width: 1024px) and (orientation: landscape) {
+      transform: scale(0.6);
+      transform-origin: top left;
     }
   }
   & .week {
     justify-self: end;
     text-align: center;
-    @media (min-width: 1024px) {
+    list-style: none;
+    background: #ffffff4d;
+    padding: 1rem;
+    border-radius: 10px;
+    @media (orientation: landscape) {
       display: flex;
+      height: max-content;
+      padding: 0.6rem;
+    }
+    @media (max-width: 1024px) and (orientation: landscape) {
+      transform: scale(0.74);
+      transform-origin: top right;
     }
   }
   & [class^="forecast"] {
-    font-size: 0.8rem;
+    font-size: 1rem;
+    font-weight: 300;
   }
   & .city {
     font-size: 3.3rem;
@@ -46,21 +58,18 @@ const StyledWeather = styled.div`
   }
   & .icon {
     margin-bottom: -2rem;
+    @media (max-width: 1024px) and (orientation: landscape) {
+      display: none;
+    }
   }
-  & .forecast-group {
-    border-bottom: 1px solid #ffffff0f;
-    @media (min-width: 1024px) {
-      border-bottom: none;
-      margin-right: 1rem;
+  & .forecast-item {
+    @media (orientation: landscape) {
+      margin: 1rem;
     }
   }
   & .forecast-day {
     margin-bottom: 1rem;
-    @media (min-width: 1024px) {
-      padding-bottom: 1rem;
-      border-bottom: 1px solid #FFFFFF0F;
-    }
-
+    font-weight: 700;
   }
   & .forecast-icon {
     margin-bottom: -1.2rem;
